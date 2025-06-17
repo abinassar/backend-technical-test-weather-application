@@ -32,11 +32,11 @@ public class TimezoneProxyController {
     }
 
     @GetMapping("/get-time-zone")
-    public ResponseEntity<String> proxyTimezoneRequest(@RequestParam String zoneName) {
+    public ResponseEntity<String> proxyTimezoneRequest(@RequestParam String zone) {
         String url = "https://api.timezonedb.com/v2.1/get-time-zone"
                    + "?key=" + apiKey
                    + "&format=json"
-                   + "&by=zone&zone=" + zoneName;
+                   + "&by=zone&zone=" + zone;
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Accept", "application/json");
