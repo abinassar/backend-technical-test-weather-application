@@ -63,8 +63,8 @@ public class HttpSecurityConfig {
         configuration.setAllowedOrigins(List.of(
             "http://localhost:3000", 
             "http://localhost:4200", 
-            "https://enchanting-unity.up.railway.app",
-            "https://enchanting-unity.up.railway.app"
+            "https://technical-weather-app.web.app",
+            "https://backend-technical-test-weather-application-production.up.railway.app"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
