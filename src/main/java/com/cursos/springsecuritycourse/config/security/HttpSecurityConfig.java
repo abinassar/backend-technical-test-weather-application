@@ -66,7 +66,7 @@ public class HttpSecurityConfig {
             "https://technical-weather-app.web.app",
             "https://backend-technical-test-weather-application-production.up.railway.app"
         ));
-        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
 
